@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eozaki.droid.of.hearts"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+	<uses-permission android:name="android.permission.VIBRATE" />
+    
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="Droid of Hearts"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Droid of Hearts" >
+		<intent-filter android:label="Droid of Hearts">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    
+    </application>
+
+</manifest>

@@ -1,0 +1,345 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    
+	<ScrollView 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+ 
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+        
+        <LinearLayout
+		    android:id="@+id/linha1"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:weightSum="1.0" >
+		
+            <TextView
+                android:id="@+id/lblvazas" 
+                android:text="V"
+                android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".10"/>
+            
+	        <EditText
+	            android:id="@+id/vazas"
+	            android:text=""
+	            android:digits="0123456789"
+	            android:inputType="number"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" /> 
+	
+	        <Button
+	            android:id="@+id/ns1"
+	            android:text="NS" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setVNS" />
+	        <Button
+	            android:id="@+id/ew1"
+	            android:text="EW" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setVEW" />
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/linha2"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:weightSum="1.0" >    
+		
+            <TextView 
+                android:id="@+id/lblCopas"
+                android:text="C"
+                android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".10"/>
+		    	            
+	        <EditText
+	            android:id="@+id/copas"
+	            android:text=""
+	            android:digits="0123456789"
+	            android:inputType="number"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" /> 
+	
+	        <Button
+	            android:id="@+id/ns2"
+	            android:text="NS" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setCNS" />
+	        <Button
+	            android:id="@+id/ew2"
+	            android:text="EW" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30" 
+	            android:onClick="setCEW" />
+		
+		</LinearLayout>
+	
+		<LinearLayout
+		    android:id="@+id/linha3"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:weightSum="1.0" 
+		    >
+	        		
+            <TextView 
+                android:id="@+string/lblHomens"
+                android:text="H"
+                android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".10"/>
+		    
+	        <EditText
+	            android:id="@+id/homens"
+	            android:text=""
+	            android:digits="0123456789"
+	            android:inputType="number"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" /> 
+	
+	        <Button
+	            android:id="@+id/ns3"
+	            android:text="NS" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setHNS" />
+	        <Button
+	            android:id="@+id/ew3"
+	            android:text="EW" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setHEW" />
+		</LinearLayout>
+	
+		<LinearLayout
+		    
+		    android:id="@+id/linha4"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:weightSum="1.0" >    
+	            		
+            <TextView 
+                android:id="@+string/lblMulheres"
+                android:text="M"
+                android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".10"/>
+		    
+	        <EditText
+	            android:id="@+id/mulheres"
+	            android:text=""
+	            android:digits="0123456789"
+	            android:inputType="number"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" /> 
+	
+	        <Button
+	            android:id="@+id/ns4"
+	            android:text="NS" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setMNS" />
+	        <Button
+	            android:id="@+id/ew4"
+	            android:text="EW" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setMEW" />
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/linha5"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:weightSum="1.0" >
+	        		
+            <TextView
+                android:id="@+string/lbl2u" 
+                android:text="2U"
+                android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".10"/>
+		    
+	        <EditText
+	            android:id="@+id/u2"
+	            android:text=""
+	            android:digits="0123456789"
+	            android:inputType="number"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" /> 
+	
+	        <Button
+	            android:id="@+id/ns5"
+	            android:text="NS" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setUNS" />
+	        <Button
+	            android:id="@+id/ew5"
+	            android:text="EW" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setUEW" />
+		</LinearLayout>
+	
+		<LinearLayout
+		    android:id="@+id/linha6"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:weightSum="1.0" >    
+	            		
+            <TextView 
+                android:id="@+string/lblKing"
+                android:text="K"
+                android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".10"/>
+		    
+	        <EditText
+	            android:id="@+id/king"
+	            android:text=""
+	            android:digits="0123456789"
+	            android:inputType="number"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" /> 
+	
+	        <Button
+	            android:id="@+id/ns6"
+	            android:text="NS" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setKNS" />
+	        <Button
+	            android:id="@+id/ew6"
+	            android:text="EW" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"
+	            android:onClick="setKEW" />
+		</LinearLayout>
+		<LinearLayout
+		    android:id="@+string/posns"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:background="#AAAAFF"
+		    android:weightSum="1.0" >
+	        <TextView 
+	            android:text="NS-1"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"/>
+	        <EditText
+	            android:id="@+id/pns1"
+	            android:inputType="number"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" />
+	        <TextView 
+	            android:text="NS-2"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"/>
+	        <EditText
+	            android:id="@+id/pns2"
+	            android:inputType="number"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" />
+	            
+	    </LinearLayout>
+		<LinearLayout
+		    android:id="@+id/posew"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:background="#FFAAAA"
+		    android:weightSum="1.0" >
+	        <TextView 
+	            android:text="EW-1"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"/>
+	        <EditText
+	            android:id="@+id/pew1"
+	            android:inputType="number"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" />
+	        <TextView 
+	            android:text="EW-2"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".30"/>
+	        <EditText
+	            android:id="@+id/pew2"
+	            android:inputType="number"
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".20" />
+	            
+	    </LinearLayout>
+		<LinearLayout  
+		    android:id="@+string/placar"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:weightSum="1.0" >
+		    	<Button
+	            android:id="@+id/atualiza"
+	            android:text="Atualizar" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".50"
+	            android:onClick="atualizar"/>
+		    	
+		    	<TextView 
+	            android:id="@+id/lblplacar" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight=".50"/>
+		</LinearLayout>
+		<LinearLayout  
+		    android:id="@+string/cancela"
+			android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:weightSum="1.0" >
+		    	<Button 
+		    	android:id="@+id/btnLimpa"
+	            android:text="Limpar" 
+	            android:layout_width="0dp" 
+	            android:layout_height="wrap_content" 
+	            android:layout_weight="1"
+	            android:onClick="confirmaLimpa"/>
+	    	</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</RelativeLayout>
